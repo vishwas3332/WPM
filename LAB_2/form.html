@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .container {
+            margin: auto;
+            width: 30%;
+            padding: 20px;
+            background-color:tomato;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2>Student Registration Form</h2>
+            <br>
+
+            <label for="first_name"><b>First Name</b></label>
+            <input type="text" id="first_name" placeholder="Enter your first name" name="first_name" required/>
+            <br><br>
+
+            <label for="last_name"><b>Last Name</b></label>
+            <input type="text" id="last_name" placeholder="Enter your last name" name="last_name" required/>
+            <br><br>
+
+            <label for="father_name"><b>Father Name</b></label>
+            <input type="text" id="father_name" placeholder="Enter your father name" name="father_name" required/>
+            <br><br>
+
+            <label for="dob"><b>Date of Birth</b></label>
+            <input type="date" id="dob" name="dob" required/>
+            <br><br>
+
+            <label><b>Gender</b></label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="others" name="gender" value="Others">
+            <label for="others">Others</label>
+            <br><br>
+
+            <label for="course"><b>Course:</b></label>
+            <select id="course" name="course">
+                <option value="">Select a course</option>
+                <option value="CS">Computer Fundamentals</option>
+                <option value="AI">Artificial Intelligence</option>
+                <option value="ML">Machine Learning</option>
+                <option value="OOPS">Object Oriented Programming</option>
+                <option value="DBMS">Database Management System</option>
+            </select>
+            <br><br>
+
+            <label><b>Hobbies:</b></label><br>
+            <input type="checkbox" id="programming" name="hobbies" value="Programming">
+            <label for="programming">Programming</label><br>
+
+            <input type="checkbox" id="games" name="hobbies" value="Games">
+            <label for="games">Playing Games</label><br>
+
+            <input type="checkbox" id="movies" name="hobbies" value="Movies">
+            <label for="movies">Watching Movies</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
