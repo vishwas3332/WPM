@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: aqua;
+            border-radius: 15px;
+            padding: 20px;
+            width: 30%;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            margin-right: 10px;
+            /* align-items: center; */
+        }
+
+        .center-button {
+            display: flex;
+            justify-content: center;
+        }
+
+        input[type="button"] {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2>Student Registration Form</h2>
+            <br>
+            <div class="form-group">
+                <label><b>First Name</b></label>
+                <input type="text" placeholder="Enter your first name" name="first_name" required/>
+            </div>
+            <div class="form-group">
+                <label><b>Last Name</b></label>
+                <input type="text" placeholder="Enter your last name" name="last_name" required/>
+            </div>
+            <div class="form-group">
+                <label><b>Father Name</b></label>
+                <input type="text" placeholder="Enter your father name" name="father_name" required/>
+            </div>
+            <div class="form-group">
+                <label><b>Date of Birth</b></label>
+                <input type="date" name="dob" required/>
+            </div>
+            <div class="form-group">
+                <label><b>Gender</b></label><br>
+                <input type="radio" name="gender" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" value="Female">
+                <label for="Female">Female</label>
+                <input type="radio" name="gender" value="Others">
+                <label for="Others">Others</label>
+            </div>
+            <div class="form-group">
+                <label><b>Course :</b></label>
+                <select>
+                    <option value="Course">Course</option>
+                    <option value="CS">Computer Fundamentals</option>
+                    <option value="AI">Artificial Intelligence</option>
+                    <option value="ML">Machine Learning</option>
+                    <option value="OOPS">Object Oriented Programming</option>
+                    <option value="DBMS">Database Management System</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><b>Hobbies :</b></label><br>
+                <input type="checkbox" id="Hobbies" name="Hobbies" value="Programming">
+                <label for="Hobbies">Programming</label>
+                <input type="checkbox" id="Hobbies" name="Hobbies" value="Games">
+                <label for="Hobbies">Playing Games</label>
+                <input type="checkbox" id="Hobbies" name="Hobbies" value="Movies">
+                <label for="Hobbies">Watching Movies</label>
+            </div>
+            <div class="center-button">
+                <input type="button" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
